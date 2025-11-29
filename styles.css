@@ -1,0 +1,36 @@
+/* Custom properties for easy color management */
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%); 
+  --color-grey-800: hsl(0, 0%, 12%); 
+  --color-grey-900: hsl(0, 0%, 8%);  
+  --font-size-base: 14px;
+}
+
+/* Reset and basic typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--font-size-base);
+  background-color: var(--color-grey-900);
+  color: var(--color-white); 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

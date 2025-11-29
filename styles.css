@@ -101,3 +101,17 @@ main {
   border-radius: 8px;
   transition: background-color 0.2s, color 0.2s; /* Prepare for smooth hover/focus */
 }
+
+/* Hover and Focus States (Requirement) */
+.social-link-button:hover,
+.social-link-button:focus {
+  background-color: var(--color-green); /* Green background on interaction */
+  color: var(--color-grey-900); /* Very dark text on interaction */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Best Practice: Use :focus-visible for better accessibility */
+.social-link-button:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 2px;
+}

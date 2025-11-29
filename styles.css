@@ -81,3 +81,23 @@ main {
   margin-top: -1rem; /* Adjust space based on design preview */
   margin-bottom: 0.5rem;
 }
+
+/* Container for the buttons */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Link Button Styling (Interactive Element) */
+.social-link-button {
+  display: block; /* Make the anchor tag take full width */
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-grey-700); /* Card button default background */
+  font-weight: 600; /* Semi-bold */
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s; /* Prepare for smooth hover/focus */
+}
